@@ -39,9 +39,7 @@ $('nav a').click(function(event) {
     event.preventDefault();
 });
 
-/******************************************
-* CD PLAYER
-*******************************************/
+
 
 var music = document.getElementById("music");
 var playButton = document.getElementById("play");
@@ -79,13 +77,9 @@ pauseButton.onclick = function() {
 	pause.style.visibility = "hidden";
 }
 
-music.addEventListener("canplaythrough", function () {
-	duration = music.duration;
+
+music.addEventListener("canplaythrough", function(){
+    duration = music.duration;
 }, false);
 
 });
-
-/******************************************
-* Cursor Constelation
-*******************************************/
-
