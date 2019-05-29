@@ -1,3 +1,33 @@
+@font-face {
+  font-family: GothamBlack;
+  src: url('../FONT/Gotham-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url('../FONT/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothamBook;
+  src: url('../FONT/Gotham-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothamLight;
+  src: url('../FONT/Gotham-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothamMedium;
+  src: url('../FONT/Gotham-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothamThin;
+  src: url('../FONT/Gotham-Thin.otf') format('opentype');
+}
+
 .main_h {
   position: fixed;
   top: 0px;
@@ -12,7 +42,8 @@
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: GothamBlack, GothamBold, GothamBook, GothamLight, GothamMedium,
+    GothamThin;
 }
 @media only screen and (max-width: 766px) {
   .main_h {
@@ -32,7 +63,7 @@
   background-color: rgba(255, 255, 255, 0.93);
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid #dcdcdc52;
 }
 
 .logo {
@@ -135,7 +166,7 @@ nav ul a {
 body {
   color: #464749;
   background: white;
-  font-family: 'Cardo', serif;
+  font-family: GothamLight;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
@@ -149,7 +180,7 @@ h1 {
   font-size: 30px;
   line-height: 1.8;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: GothamLight;
 }
 
 p {
@@ -169,22 +200,41 @@ p {
   -moz-background-size: cover;
   background-size: cover;
   text-align: center;
-  color: #0e6f7a;
+  color: #fff;
   padding-top: 110px;
-  min-height: 500px;
-  letter-spacing: 2px;
-  font-family: 'Montserrat', sans-serif;
+  min-height: 850px;
 }
-.hero h1 {
-  font-size: 50px;
-  line-height: 1.3;
+
+.inner {
+  position: relative;
+  text-align: justify;
+  left: 15%;
+  padding-top: 15%;
+  max-width: 50%;
+  float: left;
 }
-.hero h1 span {
-  font-size: 25px;
-  color: #464749;
-  border-bottom: 2px solid #464749;
-  padding-bottom: 12px;
-  line-height: 3;
+
+.left-border-menu {
+  border-left: 10px solid #0e6f7a;
+  height: 14rem;
+  width: 1rem;
+  position: relative;
+  right: 6%;
+  margin-top: 8%;
+  float: left;
+}
+
+.inner h1 {
+  margin: 0;
+  font-size: 4em;
+  line-height: 0.8em;
+}
+
+.inner p {
+  margin: 0;
+  font-size: 2em;
+  font-family: GothamBook;
+  line-height: 1.5;
 }
 
 .mouse {
@@ -225,7 +275,8 @@ p {
 
 .facebook {
   color: #000;
-  font-family: sans-serif;
+  font-family: GothamBlack, GothamBold, GothamBook, GothamLight, GothamMedium,
+    GothamThin;
   text-decoration: none;
 }
 .facebook:hover {
@@ -234,7 +285,8 @@ p {
 
 .instagram {
   color: #000;
-  font-family: sans-serif;
+  font-family: GothamBlack, GothamBold, GothamBook, GothamLight, GothamMedium,
+    GothamThin;
   text-decoration: none;
 }
 .instagram:hover {
