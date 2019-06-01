@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 
 $(function() {
   // Sticky Header
@@ -40,3 +40,4 @@ $(function() {
     event.preventDefault();
   });
 });
+ */
