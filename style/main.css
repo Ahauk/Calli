@@ -400,6 +400,15 @@ p {
 	left: -28%;
 }
 
+.right-border-menu {
+	border-right: 10px solid #0e7f8c;
+	height: 21rem;
+	width: 1rem;
+	padding: 0px 0px 0px 2em;
+	position: relative;
+	float: right;
+}
+
 
 .nav-logo {
 	width: 100%;
@@ -410,8 +419,20 @@ p {
 	margin-top: 1rem;
 }
 
-.altFix {
-	margin-top: 0;
+.about {
+	font-size: 2.3em;
+	font-family: GothamBook;
+	text-transform: lowercase;
+	padding-right: 4rem;
+}
+
+.passion {
+	color: #0e7f8c;
+	font-family: GothamMedium;
+}
+
+#sec01 {
+	height: 60%;
 }
 
 @supports(object-fit: cover){
@@ -2591,12 +2612,14 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
+			background-color: #fff;
+			background-image: url(../images/fondo.JPG);
+			background-position: 35% 52%;
+			background-repeat: no-repeat;
+			background-size: auto auto;
 			color: #fff;
+			height: 50%;
+			width: 90%;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
