@@ -29,28 +29,6 @@
     },
   });
 
-  // show element.
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 600) {
-      $('.plant-logo').fadeIn();
-      $('.about').fadeIn();
-      $('.right-border-menu').fadeIn();
-      $('.contain-media').fadeIn();
-    } else {
-      $('.plant-logo').fadeOut();
-      $('.about').fadeOut();
-      $('.right-border-menu').fadeOut();
-      $('.contain-media').fadeOut();
-    }
-
-    if (y > 800 && y < 1000) {
-      $('.our-services').fadeIn();
-    } else {
-      $('our-services').fadeOut();
-    }
-  });
-
   // Button.
   $(
     '<div id="navButton">' +

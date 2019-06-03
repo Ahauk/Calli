@@ -402,7 +402,7 @@ p {
 
 .right-border-menu {
 	border-right: 10px solid #0e7f8c;
-	height: 21rem;
+	height: 19rem;
 	width: 1rem;
 	padding: 0px 0px 0px 2em;
 	position: relative;
@@ -461,9 +461,10 @@ p {
 		height: 100%;
     object-fit: contain;
     object-position: left;
-    right: 9%;
+    right: 5%;
 		position: relative;
 		float: left;
+		top: 10%;
 	}
 
 	.services {
@@ -2954,7 +2955,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 7em 0;
+		padding: 0;
 	}
 
 		#main > :last-child {
@@ -3054,7 +3055,7 @@ input, select, textarea {
 
 			header.special {
 				padding-top: 5.5em;
-				margin-bottom: 4em;
+				margin-bottom: 8em;
 			}
 
 	}
