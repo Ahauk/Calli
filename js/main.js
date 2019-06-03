@@ -2,8 +2,8 @@
   var $window = $(window),
     $body = $('body'),
     $header = $('#header'),
-    $banner = $('#banner');
-  $logo = $('#navLogo');
+    $banner = $('#banner'),
+    $logo = $('#navLogo');
 
   // Breakpoints.
   breakpoints({
@@ -27,6 +27,28 @@
     offset: function() {
       return $header.height() + 10;
     },
+  });
+
+  // show element.
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 600) {
+      $('.plant-logo').fadeIn();
+      $('.about').fadeIn();
+      $('.right-border-menu').fadeIn();
+      $('.contain-media').fadeIn();
+    } else {
+      $('.plant-logo').fadeOut();
+      $('.about').fadeOut();
+      $('.right-border-menu').fadeOut();
+      $('.contain-media').fadeOut();
+    }
+
+    if (y > 800 && y < 1000) {
+      $('.our-services').fadeIn();
+    } else {
+      $('our-services').fadeOut();
+    }
   });
 
   // Button.
