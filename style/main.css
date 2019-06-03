@@ -435,11 +435,45 @@ p {
 	height: 60%;
 }
 
+.plant-logo {
+	width: 50%;
+  height: auto;
+}
+
+.services {
+	width: 100%;
+	height: auto;
+}
+
+.services-2{
+	width: 100%;
+	height: auto;
+}
+
 @supports(object-fit: cover){
 	.nav-logo{
 		height: 8%;
 		object-fit: scale-down;
 		object-position: left;
+	}
+
+	.plant-logo {
+		height: 100%;
+    object-fit: contain;
+    object-position: left;
+    right: 9%;
+		position: relative;
+		float: left;
+	}
+
+	.services {
+		width: 100%;
+		height: auto;
+	}
+
+	.services-2 {
+		width: 90%;
+		height: auto;
 	}
 }
 
@@ -2335,50 +2369,50 @@ input, select, textarea {
 				top: -0.2em;
 			}
 
-			.icon.circle.fa-twitter {
+			.icon.circle.fa-envelope {
 				background: #70aecd;
 				color: #fff;
 			}
 
-				.icon.circle.fa-twitter:hover {
+				.icon.circle.fa-envelope:hover {
 					background: #7fb7d2;
 				}
 
-			.icon.circle.fa-facebook {
+			.icon.circle.fa-phone {
 				background: #7490c3;
 				color: #fff;
 			}
 
-				.icon.circle.fa-facebook:hover {
+				.icon.circle.fa-phone:hover {
 					background: #829bc9;
 				}
 
-			.icon.circle.fa-google-plus {
-				background: #db6b67;
+			.icon.circle.fa-instagram {
+				background: #c13584a1;
 				color: #fff;
 			}
 
-				.icon.circle.fa-google-plus:hover {
-					background: #df7b77;
+				.icon.circle.fa-instagram:hover {
+					background: #c135847d;
 				}
 
-			.icon.circle.fa-github {
+/* 			.icon.circle.fa-github {
 				background: #dcad8b;
 				color: #fff;
 			}
 
 				.icon.circle.fa-github:hover {
 					background: #e1b89b;
-				}
+				} */
 
-			.icon.circle.fa-dribbble {
+/* 			.icon.circle.fa-dribbble {
 				background: #da83ae;
 				color: #fff;
 			}
 
 				.icon.circle.fa-dribbble:hover {
 					background: #df93b8;
-				}
+				} */
 
 		.icon.featured {
 			cursor: default;
@@ -2608,17 +2642,19 @@ input, select, textarea {
 	}
 
 		.wrapper.style1 {
-			padding: 0;
+			padding: 9em 0 0 0;
 		}
 
 		.wrapper.style2 {
-			background-color: #fff;
 			background-image: url(../images/fondo.JPG);
+			background-color: #48a4af94;
+			background-blend-mode: multiply;
 			background-position: 35% 52%;
 			background-repeat: no-repeat;
 			background-size: auto auto;
 			color: #fff;
-			height: 50%;
+			height: 100vh;
+			max-height: 50%;
 			width: 90%;
 		}
 
@@ -2940,28 +2976,46 @@ input, select, textarea {
 /* CTA */
 
 	#cta {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url("../images/fondo.JPG");
+		background-color: #48a4af94;
+		background-blend-mode: multiply;
+		background-position: 35% 52%;
+		background-repeat: no-repeat;
+		background-position: cover;
+		background-size: auto auto;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
+		height: 100vh;
+		max-height: 50%;
 	}
 
 		#cta header {
-			margin-bottom: 2em;
+			margin-top: 0.75em;
+			font-size: 5em;
+			text-align: center;
+			filter: contrast(50%);
 		}
 
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
+		background: #C7C9CA;
 		color: #7c8081;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
+	}
+
+	#footer .foot {
+		font-size: 5em;
+		color: #fff;
+		margin-bottom: 3rem;
+	}
+
+	.contactus {
+		margin: 0 0 2rem 0!important;
+		line-height: 2rem;
+		color: #fff;
 	}
 
 		#footer .copyright {
@@ -3115,10 +3169,6 @@ input, select, textarea {
 					padding: 0 2.5em;
 				}
 
-				.wrapper.style2 {
-					background-size: 15em;
-				}
-
 				.wrapper.style4 {
 					padding: 2.5em;
 				}
@@ -3236,6 +3286,10 @@ input, select, textarea {
 
 			.wrapper.special-alt {
 				text-align: center;
+			}
+
+			.wrapper.style2 {
+				background-size: 100%;
 			}
 
 			.wrapper.style4 {
@@ -3501,6 +3555,11 @@ input, select, textarea {
 					text-align: center;
 				}
 
+				.contain-media {
+					width: 100%;
+					height: auto;
+				}
+
 			footer.major {
 				padding-top: 0;
 			}
@@ -3564,7 +3623,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style2 {
-					background-size: 10em;
+					background-size: 100%;
 					padding: 2.25em 1.5em;
 				}
 
