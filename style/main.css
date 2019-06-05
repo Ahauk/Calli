@@ -398,6 +398,7 @@ p {
 	width: 1rem;
 	padding: 0% !important;
 	left: -28%;
+	top: 1px;
 }
 
 .right-border-menu {
@@ -2930,7 +2931,7 @@ input, select, textarea {
 			text-align: center;
 			position: relative;
 			right: 30%;
-			bottom: -5%;
+			bottom: 50%;
 			font-size: 1.75rem;
 		}
 
@@ -2950,6 +2951,7 @@ input, select, textarea {
 				margin: 0;
 				text-transform: lowercase;
 				line-height: 0%;
+				margin: -3.5em;
 			}
 
 /* Main */
