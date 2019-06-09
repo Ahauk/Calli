@@ -1,95 +1,160 @@
 <!DOCTYPE >
 <html>
-  <head>
-    <title>CALLI Design Studio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="shortcut icon" type=”image/x-icon” href="images/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css"
-    />
-    <style>
-      @font-face {
-        font-family: GothamLight;
-        src: url('../FONT/Gotham-Light.otf') format('opentype');
-      }
-      .contain {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #464749;
-      }
 
-      body {
-        margin: 0;
-      }
+<head>
+  <title>CALLI Design Studio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" type=”image/x-icon” href="images/favicon.png" />
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
+</head>
 
-      .imagex {
-        width: 100%;
-        height: auto;
-      }
-
-      @supports (object-fit: cover) {
-        .imagex {
-          height: 25%;
-          object-fit: contain;
-          object-position: center;
-          margin-top: 15em;
-        }
-      }
-
-      .text {
-        text-align: center;
-        text-transform: uppercase;
-        font-family: GothamLight;
-        font-size: 1.5em;
-        color: #aeb8b9;
-      }
-
-      /*       @keyframes blink {
-        0% {
-          opacity: 0.2;
-        }
-        20% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0.2;
-        }
-      }
-
-      .saving span {
-        animation-name: blink;
-        animation-duration: 1.4s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: both;
-      }
-
-      .saving span:nth-child(2) {
-        animation-delay: 0.2s;
-      }
-
-      .saving span:nth-child(3) {
-        animation-delay: 0.4s;
-      } */
-    </style>
-  </head>
-
-  <body>
-    <div class="contain">
-      <img
-        class="imagex animated fadeIn slower"
-        src="images/calli.png"
-        alt="Calli Design Studio"
-      />
-      <h1 class="text animated fadeIn delay-2s">
-        Coming Soon
-        <!-- <span>.</span><span>.</span><span>.</span> -->
+<body class="index is-preload">
+  <div id="principal">
+    <img id='calli-ds' src="images/calli.png" alt="Calli Design Studio" class="hexa-logo" >
+  </div>
+  <div id="page-wrapper">
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1 id="logo">
+        <img id="navLogo" src="images/logo1.png" alt="logo" class="nav-logo" />
       </h1>
-    </div>
-  </body>
+      <nav id="nav">
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#main">About</a></li>
+          <li><a href="#business-service">Services</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <span class="inner left-border-menu"></span>
+      <div class="inner">
+        <p>... is our passion!</p>
+        <h2>Design</h2>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <article id="main">
+      <header id="sec01" class="special container">
+        <img src="images/PlantHex.png" alt="planta" class="plant-logo">
+        <h1 class="about">Hello...</h1>
+        <div class="right-border-menu"></div>
+        <div class="contain-media">
+        <p>
+          We are a new and young multidisciplinary studio </br>
+          in the heart of Vancouver. with more than 9 years </br>
+          of experience on Interior Design, 3D animation, </br>
+          Graphic Design and Architecture.
+        </p>
+        <p>
+          We have always believed that everything we do </br>
+          through our <span class="passion">PASSION</span>, will lead us to accomplish </br>
+          great, fun and amazing things that clients: </br>
+          “will love and enjoy.”
+        </p>
+      </div>
+      <!-- <ul class="buttons">
+          <li><a href="#" class="button small">Learn More</a></li>
+        </ul> -->
+      </header>
+
+
+    <!-- CTA -->
+    <section id="cta">
+        <header>
+          <h1  id="business-service" class="animated fadeIn delay-3s our-services">Our Services</h1>
+        </header>
+      </section>
+
+      <!-- Two -->
+      <section class="wrapper style1 container special">
+        <div class="row">
+
+          <div class="col-3 col-12-narrower">
+            <section>
+                <a href="interior-design.html" id="interior-design">
+                  <span class="icon featured ">
+                    <img src="images/3.png" alt="Interior Design" class="services-2">
+                  </span>
+                  <header>
+                    <h2>Interior </br> Design</h2>
+                  </header>
+                </a>
+            </section>
+          </div>
+          <div class="col-3 col-12-narrower">
+            <section>
+              <span class="icon featured ">
+                  <img src="images/4.png" alt="Building" class="services">
+              </span>
+              <header>
+                <h2>3D Render </br> / Animation</h2>
+              </header>
+            </section>
+          </div>
+          <div class="col-3 col-12-narrower">
+            <section>
+              <span class="icon featured ">
+                  <img src="images/2.png" alt="Graphic Design" class="services">
+              </span>
+              <header>
+                <h2>Graphic </br> Design</h2>
+              </header>
+            </section>
+          </div>
+          <div class="col-3 col-12-narrower">
+            <section>
+              <span class="icon featured">
+                <img src="images/1.png" alt="Building Measurement" class="services">
+              </span>
+              <header>
+                <h2>Building </hb>Measurement</h2>
+              </header>
+            </section>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <h1 class="foot">Contact Us</h1>
+      <p class="contactus">CALLI Design Studio</p>
+      <p class="contactus">604 379 6001</p>
+      <p class="contactus">hello@callids.com</p>
+      <ul class="icons">
+        <li>
+          <a href="mailto:hello@callids.com" class="icon circle fa-envelope"><span class="label">Email</span></a>
+        </li>
+        <li>
+          <a href="tel:6063796001" class="icon circle fa-phone"><span class="label">Phone</span></a>
+        </li>
+        <li>
+          <a href="#" class="icon circle fa-instagram"><span class="label">Instagram</span></a>
+        </li>
+      </ul>
+
+      <ul class="copyright">
+        <li>&copy; Calli Design Studio | All Rights Reserved</li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/jquery.scrollex.min.js"></script>
+  <script src="js/browser.min.js"></script>
+  <script src="js/breakpoints.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

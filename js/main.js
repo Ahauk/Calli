@@ -18,7 +18,7 @@
   $window.on('load', function() {
     window.setTimeout(function() {
       $body.removeClass('is-preload');
-    }, 100);
+    }, 1000);
   });
 
   // Scrolly.
@@ -27,6 +27,19 @@
     offset: function() {
       return $header.height() + 10;
     },
+  });
+
+  $('nav a').click(function(event) {
+    var id = $(this).attr('href');
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate(
+      {
+        scrollTop: target,
+      },
+      1000,
+    );
+    event.preventDefault();
   });
 
   // Button.
@@ -65,25 +78,14 @@
         enter: function() {
           $header.addClass('alt reveal');
           $logo.removeClass('fix');
+          $logo.attr('src', 'images/logo1.png');
         },
         leave: function() {
           $header.removeClass('alt');
           $logo.addClass('fix');
+          $logo.attr('src', 'images/logo.png');
         },
       });
     });
   }
-
-  $('nav a').click(function(event) {
-    var id = $(this).attr('href');
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate(
-      {
-        scrollTop: target,
-      },
-      1000,
-    );
-    event.preventDefault();
-  });
 })(jQuery);
