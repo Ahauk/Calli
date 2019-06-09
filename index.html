@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE >
 <html>
 
 <head>
@@ -12,17 +12,20 @@
 </head>
 
 <body class="index is-preload">
+  <div id="principal">
+    <img id='calli-ds' src="images/calli.png" alt="Calli Design Studio" class="hexa-logo"  style="display: none">
+  </div>
   <div id="page-wrapper">
     <!-- Header -->
     <header id="header" class="alt">
       <h1 id="logo">
-        <img id="navLogo" src="images/logo.png" alt="logo" class="nav-logo" />
+        <img id="navLogo" src="images/logo1.png" alt="logo" class="nav-logo" />
       </h1>
       <nav id="nav">
         <ul>
           <li><a href="#banner">Home</a></li>
           <li><a href="#main">About</a></li>
-          <li><a href="#cta">Services</a></li>
+          <li><a href="#business-service">Services</a></li>
           <li><a href="#footer">Contact Us</a></li>
         </ul>
       </nav>
@@ -32,18 +35,18 @@
     <section id="banner">
       <span class="inner left-border-menu"></span>
       <div class="inner">
-        <h2>Design</h2>
         <p>... is our passion!</p>
+        <h2>Design</h2>
       </div>
     </section>
 
     <!-- Main -->
     <article id="main">
       <header id="sec01" class="special container">
-        <img src="images/PlantHex.png" alt="planta" class="plant-logo animated slideInLeft">
-        <h1 class="about animated slideInDown">Hello...</h1>
-        <div class="right-border-menu animated slideInLeft"></div>
-        <div class="contain-media animated slideInRight">
+        <img src="images/PlantHex.png" alt="planta" class="plant-logo">
+        <h1 class="about">Hello...</h1>
+        <div class="right-border-menu"></div>
+        <div class="contain-media">
         <p>
           We are a new and young multidisciplinary studio </br>
           in the heart of Vancouver. with more than 9 years </br>
@@ -57,13 +60,16 @@
           “will love and enjoy.”
         </p>
       </div>
+      <!-- <ul class="buttons">
+          <li><a href="#" class="button small">Learn More</a></li>
+        </ul> -->
       </header>
 
 
     <!-- CTA -->
     <section id="cta">
         <header>
-          <h1 class="animated fadeIn delay-3s our-services">Our Services</h1>
+          <h1  id="business-service" class="animated fadeIn delay-3s our-services">Our Services</h1>
         </header>
       </section>
 
@@ -73,22 +79,26 @@
 
           <div class="col-3 col-12-narrower">
             <section>
-              <span class="icon featured">
-                <img src="images/1.png" alt="Building Measurement" class="services">
-              </span>
-              <header>
-                <h2>Building </hb>Measurement</h2>
-              </header>
+                <a href="pages/interior-design.html" id="interior-design" target="_self" >
+                  <span class="icon featured ">
+                    <img src="images/3.png" alt="Interior Design" class="services-2">
+                  </span>
+                  <header>
+                    <h2>Interior </br> Design</h2>
+                  </header>
+                </a>
             </section>
           </div>
           <div class="col-3 col-12-narrower">
             <section>
-              <span class="icon featured ">
-                  <img src="images/3.png" alt="Interior Design" class="services-2">
-              </span>
-              <header>
-                <h2>Interior </br> Design</h2>
-              </header>
+              <a href="pages/animation.html" id="animation-3d" target="_self" >
+                <span class="icon featured ">
+                    <img src="images/4.png" alt="Building" class="services">
+                </span>
+                <header>
+                  <h2>3D Render </br> / Animation</h2>
+                </header>
+              </a>
             </section>
           </div>
           <div class="col-3 col-12-narrower">
@@ -103,11 +113,11 @@
           </div>
           <div class="col-3 col-12-narrower">
             <section>
-              <span class="icon featured ">
-                  <img src="images/4.png" alt="Building" class="services">
+              <span class="icon featured">
+                <img src="images/1.png" alt="Building Measurement" class="services">
               </span>
               <header>
-                <h2>3D Render </br> / Animation</h2>
+                <h2>Building </hb>Measurement</h2>
               </header>
             </section>
           </div>
@@ -147,7 +157,6 @@
   <script src="js/breakpoints.min.js"></script>
   <script src="js/util.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/section.js"></script>
 </body>
 
 </html>
