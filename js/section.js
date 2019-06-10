@@ -3,10 +3,9 @@
     $body = $('body'),
     $header = $('#header'),
     $banner = $('#banner'),
-    $principal = $('#principal'),
-    $calli = $('#calli-ds'),
-    $home = $('#home'),
-    $logo = $('#navLogo');
+    $unoDesign = $('#uno-design'),
+    $unoAnimate = $('#uno-animate'),
+    $home = $('#home');
 
   // Breakpoints.
   breakpoints({
@@ -17,40 +16,27 @@
     mobile: [null, '736px'],
   });
 
-  // Play initial animations on page load.
-  $window.on('load', function() {
-    window.setTimeout(function() {
-      $body.removeClass('is-preload');
-    }, 1000);
-  });
-
-  // Scrolly.
-  $('.scrolly').scrolly({
-    speed: 1000,
-    offset: function() {
-      return $header.height() + 10;
-    },
-  });
-
-  $('nav a').click(function(event) {
-    var id = $(this).attr('href');
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate(
-      {
-        scrollTop: target,
-      },
-      1000,
-    );
-    event.preventDefault();
-  });
-
   // Button.
   $(
     '<div id="navButton">' +
       '<a href="#navPanel" class="toggle"></a>' +
       '</div>',
   ).appendTo($body);
+
+  $unoDesign.on('click', function() {
+    event.preventDefault();
+    window.location.replace('detail-design.html');
+  });
+
+  $unoAnimate.on('click', function() {
+    event.preventDefault();
+    window.location.replace('detail-animate.html');
+  });
+
+  $home.on('click', function() {
+    event.preventDefault();
+    window.location.replace('home.html');
+  });
 
   // Panel.
   $('<div id="navPanel">' + '<nav>' + $('#nav').navList() + '</nav>' + '</div>')
@@ -80,13 +66,9 @@
         },
         enter: function() {
           $header.addClass('alt reveal');
-          $logo.removeClass('fix');
-          $logo.attr('src', 'images/logo1.png');
         },
         leave: function() {
           $header.removeClass('alt');
-          $logo.addClass('fix');
-          $logo.attr('src', 'images/logo.png');
         },
       });
     });

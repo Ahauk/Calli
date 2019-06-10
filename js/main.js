@@ -3,29 +3,14 @@
     $body = $('body'),
     $header = $('#header'),
     $banner = $('#banner'),
-    $principal = $('#principal'),
-    $calli = $('#calli-ds'),
+    $prueba = $('#pruebamelo'),
     $logo = $('#navLogo');
 
-  // lock scroll position, but retain settings for later
-  var scrollPosition = [
-    self.pageXOffset ||
-      document.documentElement.scrollLeft ||
-      document.body.scrollLeft,
-    self.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop,
-  ];
-
-  var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-  html.data('scroll-position', scrollPosition);
-  html.data('previous-overflow', html.css('overflow'));
-  html.css('overflow', 'hidden');
-  window.scrollTo(scrollPosition[0], scrollPosition[1]);
-
-  // Hide principal image
-  $calli.delay(500).fadeIn(1500, function() {
-    $principal.delay(2000).fadeOut();
+  // First on load navigations and save to localStorage
+  $window.on('load', function() {
+    window.setTimeout(function() {
+      $body.removeClass('is-preload');
+    }, 1000);
   });
 
   // Breakpoints.
@@ -35,18 +20,6 @@
     narrow: ['841px', '980px'],
     narrower: ['737px', '840px'],
     mobile: [null, '736px'],
-  });
-
-  // Play initial animations on page load.
-  $window.on('load', function() {
-    window.setTimeout(function() {
-      // un-lock scroll position
-      var html = jQuery('html');
-      var scrollPosition = html.data('scroll-position');
-      html.css('overflow', html.data('previous-overflow'));
-      window.scrollTo(scrollPosition[0], scrollPosition[1]);
-      $body.removeClass('is-preload');
-    }, 4000);
   });
 
   // Scrolly.
@@ -106,12 +79,12 @@
         enter: function() {
           $header.addClass('alt reveal');
           $logo.removeClass('fix');
-          $logo.attr('src', 'images/logo1.png');
+          $logo.attr('src', '../images/logo1.png');
         },
         leave: function() {
           $header.removeClass('alt');
           $logo.addClass('fix');
-          $logo.attr('src', 'images/logo.png');
+          $logo.attr('src', '../images/logo.png');
         },
       });
     });
